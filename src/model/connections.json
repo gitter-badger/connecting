@@ -1,0 +1,9 @@
+{
+  "bits":[
+    {
+      "clientId":"objectOne",
+      "input":"simple-js-output",
+      "output":"simple-js-input"
+    }
+  ]
+}

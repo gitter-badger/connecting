@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Electron boilerplate</title>
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="photon/css/photon.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
+    <script type="text/javascript" src="js/view-display.js"></script>
+    <script type="text/javascript" src="js/view-functions.js"></script>
+  </head>
+  <body>
+    <div class="window">
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Header</h1>
+        <div class="toolbar-actions">
+          <div class="btn-group">
+            <button class="btn btn-default action-btns" id="btn-connect">
+            <span class="icon icon-cloud" id="icon-connect"></span>
+            </button>
+            <button class="btn btn-default action-btns" id="btn-subscribe">
+            <span class="icon icon-download"></span>
+            </button>
+            <button class="btn btn-default action-btns" id= "btn-publish">
+            <span class="icon icon-upload"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="tab-group">
+        <div class="tab-item" id="action-tab">
+          <!-- <span class="icon"></span> -->
+          Actions
+        </div>
+        <div class="tab-item active" id="shiftr-tab">
+          <!-- <span class="icon icon-cancel icon-close-tab"></span> -->
+          Shiftr
+        </div>
+        <!--        <div class="tab-item">
+          <span class="icon icon-cancel icon-close-tab"></span>
+          Tab
+        </div> -->
+        <!-- <div class="tab-item tab-item-fixed"> -->
+        <!-- <span class="icon icon-plus"></span> -->
+        <!-- </div> -->
+      </div>
+      <div class="window-content">
+        <div id="action" class="inactive"></div>
+        <div id="shiftr">
+          <iframe src="https://shiftr.io/fabianmoronzirfas/helloworld/embed?zoom=1" frameborder="0">
+          </iframe>
+        </div>
+
+      </div>
+      <footer class="toolbar toolbar-footer">
+        <h1 class="title">Footer</h1>
+      </footer>
+    </div>
+  </body>
+</html>
