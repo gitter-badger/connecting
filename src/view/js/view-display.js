@@ -18,11 +18,19 @@ $(document).ready(function() {
     // exchange the content
     if ($(this).is('#action-tab')) {
       $('#shiftr').addClass('inactive');
+      $('#flow').addClass('inactive');
       $('#action').removeClass('inactive');
     }
+
     if ($(this).is('#shiftr-tab')) {
-      $('#shiftr').removeClass('inactive');
       $('#action').addClass('inactive');
+      $('#flow').addClass('inactive');
+      $('#shiftr').removeClass('inactive');
+    }
+    if ($(this).is('#flow-tab')) {
+      $('#action').addClass('inactive');
+      $('#shiftr').addClass('inactive');
+      $('#flow').removeClass('inactive');
     }
   }); // end of tab switching
 

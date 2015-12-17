@@ -8,7 +8,7 @@ import path  from 'path';
 gulp.task('babel', ()=>{
   return gulp.src('src/**/*.js')
   .pipe(babel({
-    presets:['node5']
+    presets:['es2015']
 }))
   .pipe(gulp.dest('app'));
 });

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
     <script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
     <script type="text/javascript" src="js/view-display.js"></script>
+    <script type="text/javascript" src="js/view-flow.js"></script>
     <script type="text/javascript" src="js/view-functions.js"></script>
   </head>
   <body>
@@ -29,11 +30,15 @@
         </div>
       </header>
       <div class="tab-group">
+        <div class="tab-item active" id="flow-tab">
+          <!-- <span class="icon"></span> -->
+          Flow
+        </div>
         <div class="tab-item" id="action-tab">
           <!-- <span class="icon"></span> -->
           Actions
         </div>
-        <div class="tab-item active" id="shiftr-tab">
+        <div class="tab-item" id="shiftr-tab">
           <!-- <span class="icon icon-cancel icon-close-tab"></span> -->
           Shiftr
         </div>
@@ -46,8 +51,9 @@
         <!-- </div> -->
       </div>
       <div class="window-content">
+      <div id="flow" ></div>
         <div id="action" class="inactive"></div>
-        <div id="shiftr">
+        <div id="shiftr" class="inactive">
           <iframe src="https://shiftr.io/fabianmoronzirfas/helloworld/embed?zoom=1" frameborder="0">
           </iframe>
         </div>

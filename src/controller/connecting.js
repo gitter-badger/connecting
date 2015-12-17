@@ -11,11 +11,11 @@ require('electron-debug')();
 // prevent window being garbage collected
 // var patcher = require('./controller/patcher.js');
 var config = require('simpler-config').load({
-  login: require('../config/default.json'),
-  patch: require('../model/connections.json')
+  login: require('config/default.json'),
+  patch: require('model/connections.json')
 });
 
-import * as mqttControl from './mqtt-controlls';
+var mqttControl = require('mqtt-controls');
 
 export function patcher() {
 }
@@ -39,7 +39,7 @@ export function init(global_app) {
 
   app.on('ready', () => {
     mainWindow = createMainWindow();
-    mqttControl.init();
+    mqttControl.init(config.login.user, config.login.pw, pkg.name);
   });
 
   app.on('quit',()=>{

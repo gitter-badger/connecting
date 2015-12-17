@@ -2,8 +2,19 @@
   "bits":[
     {
       "clientId":"objectOne",
-      "input":"simple-js-output",
-      "output":"simple-js-input"
+      "input":"objectTwo"
+    },
+    {
+      "clientId":"objectTwo",
+      "input":"objectThree"
+    },
+    {
+      "clientId":"objectThree",
+      "input":"objectFour"
+    },
+        {
+      "clientId":"objectFour",
+      "input":"objectTwo"
     }
   ]
 }
