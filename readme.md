@@ -1,5 +1,7 @@
 # app
 
+[![Join the chat at https://gitter.im/FH-Potsdam/connecting](https://badges.gitter.im/FH-Potsdam/connecting.svg)](https://gitter.im/FH-Potsdam/connecting?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > My superb app
 
 
